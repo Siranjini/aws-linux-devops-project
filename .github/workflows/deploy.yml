@@ -20,5 +20,10 @@ jobs:
           key: ${{ secrets.EC2_KEY }}
           port: 22
           script: |
-            cd /home/ubuntu
-            git pull origin main
+            if [ -d "/home/ubuntu/aws-linux-devops-project" ]; then
+              cd /home/ubuntu/aws-linux-devops-project
+              git pull origin main
+            else
+              cd /home/ubuntu
+              git clone https://github.com/Siranjini/aws-linux-devops-project.git
+            fi
