@@ -1,10 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>AWS DevOps Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siranjini M - Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; background: #f5f5f5; color: #333; }
+        header {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white; text-align: center; padding: 60px 20px;
+        }
+        header h1 { font-size: 3em; margin-bottom: 10px; }
+        header p { font-size: 1.3em; opacity: 0.9; }
+        section { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .card {
+            background: white; border-radius: 12px;
+            padding: 30px; margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        .card h2 {
+            color: #667eea; font-size: 1.6em;
+            margin-bottom: 15px; border-bottom: 2px solid #667eea;
+            padding-bottom: 8px;
+        }
+        .card p { line-height: 1.8; font-size: 1.05em; }
+        .skills { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; }
+        .skill {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white; padding: 10px 20px;
+            border-radius: 25px; font-size: 0.95em;
+            font-weight: bold;
+        }
+        .contact a {
+            color: #667eea; text-decoration: none;
+            font-size: 1.1em; font-weight: bold;
+        }
+        .contact a:hover { text-decoration: underline; }
+        footer {
+            text-align: center; padding: 20px;
+            background: #333; color: white; font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello from AWS EC2 🚀</h1>
-    <p>Deployed using GitHub Actions</p>
+
+<header>
+    <h1>Siranjini M</h1>
+    <p>☁️ Cloud Computing Engineer</p>
+</header>
+
+<section>
+    <div class="card">
+        <h2>👩‍💻 About Me</h2>
+        <p>Entry-level MA graduate (2025) with a strong foundation in AWS, Linux and CCNA. Eager to learn enterprise technologies and contribute effectively to software service and infrastructure.</p>
+    </div>
+
+    <div class="card">
+        <h2>🛠️ Skills & Technologies</h2>
+        <div class="skills">
+            <span class="skill">☁️ AWS</span>
+            <span class="skill">🌐 CCNA</span>
+            <span class="skill">🐧 Linux</span>
+            <span class="skill">⚙️ DevOps</span>
+            <span class="skill">🐍 Python</span>
+        </div>
+    </div>
+
+    <div class="card contact">
+        <h2>📬 Contact</h2>
+        <p>📧 Email: <a href="mailto:siranjini623@gmail.com">siranjini623@gmail.com</a></p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Siranjini M | Deployed on AWS EC2 using GitHub Actions 🚀</p>
+</footer>
+
 </body>
 </html>
