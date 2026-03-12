@@ -27,3 +27,7 @@ jobs:
               cd /home/ubuntu
               git clone https://github.com/Siranjini/aws-linux-devops-project.git
             fi
+            sudo apt-get update -y
+            sudo apt-get install nginx -y
+            sudo cp /home/ubuntu/aws-linux-devops-project/index.html /var/www/html/
+            sudo systemctl restart nginx
